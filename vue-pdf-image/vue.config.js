@@ -10,8 +10,22 @@ module.exports = {
             jsonpFunction: `webpackJsonp_${name}`
         }
     },
+    chainWebpack: (config) => {
+        config.module
+            .rule('fonts')
+            .use('url-loader')
+            .loader('url-loader')
+            .options({})
+            .end()
+        config.module
+            .rule('images')
+            .use('url-loader')
+            .loader('url-loader')
+            .options({})
+            .end()
+    },
     devServer: {
-        port: '8000',
+        port: '8080',
         proxy: {
             '^/api': {
                 target: 'http://cms.ipfz.co:83',

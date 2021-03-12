@@ -2,6 +2,8 @@
 node_modules
 
 dist
+vue-pdf-image-dist
+main-dist
 
 # local env files
 .env.local
