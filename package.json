@@ -1,0 +1,25 @@
+{
+  "name": "micro-application",
+  "version": "1.0.0",
+  "description": "qiankun 微前端,子应用为pdf转图片项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/Jessican/micro-application.git"
+  },
+  "keywords": [
+    "微前端",
+    "qiankun",
+    "micro",
+    "children"
+  ],
+  "author": "ricardo",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
