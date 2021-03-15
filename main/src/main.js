@@ -42,7 +42,7 @@ registerMicroApps(
     [
         {
             name: pdfPackage.name, // 子应用名称
-            entry: '//localhost:8001', // 子应用入口地址
+            entry: '//localhost:8000', // 子应用入口地址
             container: '#subapp-viewport',
             loader,
             activeRule: '/pdf', // 子应用触发路由

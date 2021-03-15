@@ -4,6 +4,6 @@ module.exports = {
     publicPath: './',
     outputDir: path.resolve(__dirname, '../main-dist'),
     devServer: {
-        port: 8000,
+        port: 8080,
     }
 }
