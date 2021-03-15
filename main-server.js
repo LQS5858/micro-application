@@ -6,7 +6,7 @@ const port = 8080
 app.use(express.static('main-dist'))
 
 app.get('*', (req, res) => {
-    fs.readFile('./main-static/index.html', 'utf-8', (err, html) => {
+    fs.readFile('./main-dist/index.html', 'utf-8', (err, html) => {
         res.send(html)
     })
 })

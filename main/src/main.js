@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App'
+import { applicationEntry } from '@/config/base.js'
 
 import { registerMicroApps, runAfterFirstMounted, setDefaultMountApp, start, initGlobalState } from 'qiankun'
 const pdfPackage = require('../../vue-pdf-image/package.json')
@@ -42,7 +43,7 @@ registerMicroApps(
     [
         {
             name: pdfPackage.name, // 子应用名称
-            entry: '//localhost:8000', // 子应用入口地址
+            entry: process.env.NODE_ENV === 'production' ? applicationEntry.entry : '//localhost:8000', // 子应用入口地址
             container: '#subapp-viewport',
             loader,
             activeRule: '/pdf', // 子应用触发路由

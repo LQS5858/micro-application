@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.static('vue-pdf-image-dist'))
 console.log('');
 app.get('*', (req, res) => {
-    fs.readFile('./vue-static/index.html', 'utf-8', (err, html) => {
+    fs.readFile('./vue-pdf-image-dist/index.html', 'utf-8', (err, html) => {
         res.send(html)
     })
 })
