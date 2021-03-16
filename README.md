@@ -11,18 +11,18 @@
 npm i
 ```
 # 开发
-# 在三个目录下分别执行
+在三个目录下分别执行
 ```
 npm run dev
 ```
 
 # 部署
-# 分别切换到三个目录，执行
+分别切换到三个目录，执行
 ```
 npm run build
 
 ```
-# 先后执行
+先后执行
 ```
 node vue-pdf-server.js
 node main-server.js
