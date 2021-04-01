@@ -25,7 +25,7 @@ module.exports = {
             .end()
     },
     devServer: {
-        port: '8080',
+        port: '8000',
         proxy: {
             '^/api': {
                 target: 'http://cms.ipfz.co:83',

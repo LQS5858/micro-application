@@ -8,7 +8,7 @@
       <!-- 侧边栏 -->
       <ul class="mainapp-sidemenu">
         <li @click="push('/pdf')">Vue</li>
-        <li @click="push('/react')">React</li>
+        <li @click="push('/vue3')">Vue3</li>
       </ul>
       <!-- 子应用  -->
       <main class="subapp-container">

@@ -4,6 +4,7 @@ import { applicationEntry } from '@/config/base.js'
 
 import { registerMicroApps, runAfterFirstMounted, setDefaultMountApp, start, initGlobalState } from 'qiankun'
 const pdfPackage = require('../../vue-pdf-image/package.json')
+const vue3Package = require('../../vue3-qiankun/package.json')
 let app = null
 
 function render ({ loading }) {
@@ -49,11 +50,11 @@ registerMicroApps(
             activeRule: '/pdf', // 子应用触发路由
         },
         {
-            name: 'react',
-            entry: '//localhost:8002',
+            name: vue3Package.name,
+            entry: process.env.NODE_ENV === 'production' ? applicationEntry.childrenTwo : '//localhost:3000',
             container: '#subapp-viewport',
             loader,
-            activeRule: '/react',
+            activeRule: '/vue3',
         },
     ],
     // 子应用生命周期事件
